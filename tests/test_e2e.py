@@ -24,7 +24,7 @@ class TestOne(BaseClass):
             i = i + 1
             cardText = card.text
             log.info(cardText)
-            if cardText == "Blackberry":
+            if cardText == "Nokia Edge":
                 checkoutpage.getCardFooter()[i].click()
 
         self.driver.find_element_by_css_selector("a[class*='btn-primary']").click()

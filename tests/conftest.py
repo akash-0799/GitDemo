@@ -17,8 +17,6 @@ def setup(request):
         driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
     elif browser_name == "firefox":
         driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
-    elif browser_name == "IE":
-        print("IE driver")
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.maximize_window()
 
